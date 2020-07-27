@@ -20,6 +20,7 @@ const CharacterScreen = () =>{
 
     return(
         <View>
+           
             <SearchBar
                 term = {term}
                 onTermChange = {setTerm}
@@ -35,6 +36,7 @@ const CharacterScreen = () =>{
                 />
              
              </ScrollView>
+             
         </View>
     );   
 
@@ -48,7 +50,15 @@ const styles = StyleSheet.create({
         fontSize: 30,
         justifyContent: 'center', 
         alignItems: 'center' 
-    }
+    }, 
+
+    backgroundImageStyle:{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+    },
 
 });
 
